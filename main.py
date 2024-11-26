@@ -5,9 +5,9 @@ import requests
 from city_info import show_city_info
 from city_details import translate_text
 
-API_KEY = "AIzaSyCRPLbjAcLZQ6yirVrUlUFfUGSPtTQRAUY"
+GOOGLE_PLACES_API_KEY = "GOOGLE_PLACES_API_KEY"
 
-TRANSLATE_API_KEY = "AIzaSyCRPLbjAcLZQ6yirVrUlUFfUGSPtTQRAUY"
+TRANSLATE_API_KEY = "TRANSLATE_API_KEY"
 
 window = tk.Tk()
 window.title("여행 정보 프로그램")
@@ -32,7 +32,7 @@ def open_new_window():
             "input": translated_country_name,
             "inputtype": "textquery",
             "fields": "name,types",
-            "key": API_KEY
+            "key": GOOGLE_PLACES_API_KEY
         }
         response = requests.get(url, params=params)
         response.raise_for_status()
