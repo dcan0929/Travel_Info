@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 from city_details import get_exchange_rate, get_city_details, get_city_info_from_opencage, translate_text
 
 #구글맵 API
-GOOGLE_PLACES_API_KEY = "AIzaSyCRPLbjAcLZQ6yirVrUlUFfUGSPtTQRAUY"
+GOOGLE_PLACES_API_KEY = "GOOGLE_PLACES_API_KEY"
 
 def show_city_info(city, window):
 
